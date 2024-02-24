@@ -50,6 +50,9 @@ int main(){
         		scanf("%d", &b);
                 break;
             case 5:
+                printf("\n\nIngresa el primer numero: ");
+        		scanf("%d", &a);
+                printf("El resultado del factorial es : \n %d",factorial(a));
                 break;
             default:
                 break;
@@ -72,6 +75,15 @@ int multiplicacion(int a, int b){
     return 0;}
 int division(int a, int b){
     return 0;}
+int factorial(int a){
+    int fac=1;
+    for (int i = 1; i <= a; i++)
+    {
+        fac*=i;
+    }
+    return fac;
+    
+}
     
 void clean(){
 	#ifdef _WIN32
